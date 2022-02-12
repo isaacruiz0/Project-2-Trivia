@@ -31,7 +31,7 @@ https://opentdb.com/api_config.php
 
 - [Mobile Wireframe](https://i.imgur.com/2gdPh3N.jpg)
 - [Desktop Wireframe](https://i.imgur.com/W3CMn5g.jpg)
-- [React Flow-Chart(https://i.imgur.com/OvagLrk.jpg)
+- [React Flow-Chart](https://i.imgur.com/OvagLrk.jpg)
 
 
 #### MVP
