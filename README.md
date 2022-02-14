@@ -56,7 +56,7 @@ https://opentdb.com/api_config.php
 | -------------- | :-------------------------------------------------------------:  |
 | Category	 |This will connect the user's choice with the api's category data  |
 | Difficulty   	 |   Access the api's questions based on difficulty                 |
-| Questions      |The answers for these questions will be compared the api's answers|
+| Questions      |The answers for these questions will be compared to the api's answers|
 
 ##### MVP Time Frame
 
