@@ -16,6 +16,7 @@ function EasyQuestions() {
   const [quesCount, setQuesCount] = useState(0)
   // this will define the question array that we are working with
   const [currentArray, setCurrentArray] = useState([])
+
   // This will fetch the question from the api and I will use useStates to make it dyanmic
   useEffect(
     () => {
@@ -31,11 +32,11 @@ function EasyQuestions() {
     }, [])
 
   // this will set the question and the answer according the array's data
-  useEffect(  
-  () => {
-    console.log(currentArray)
+console.log(currentArray[0])
+  
 
-  },[])
+
+
 
   // This will compare the user's choice with the correct answer
   useEffect(
