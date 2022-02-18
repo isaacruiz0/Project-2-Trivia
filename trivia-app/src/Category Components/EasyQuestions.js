@@ -75,7 +75,7 @@ function EasyQuestions() {
 
 
   return (
-    <div>
+    <div className='questionContainer'>
         <h2 className='question'>{question}</h2>
         <button className={startClass} onClick={handleStart} >START</button>
         <h3 className='judgement'>{judgment}</h3>
