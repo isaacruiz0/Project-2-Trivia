@@ -8,8 +8,8 @@ function Category() {
   console.log("test")
   return (
     <div>
-        <h1>This is the Category Section</h1>
-        <button onClick={() => {navigate("/Difficulty")}}>General Knowledge</button>
+        <h1 className='choose'>Choose your knowledge of expertise</h1>
+        <button className='categoryButton' onClick={() => {navigate("/Difficulty")}}>General Knowledge</button>
     </div>
   )
 }

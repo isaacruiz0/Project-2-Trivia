@@ -4,6 +4,7 @@ body{
     height: 100vh;
     text-align: center;
 }
+/* Question Section */
 .defaultStart {
     background-color:  white;
     border: none;
@@ -47,6 +48,7 @@ body{
     font-size: 25px;
     border: none;
     background-color: white;
+    margin-top: 17px;
     transition-duration: 0.3s;
 
  }
@@ -63,5 +65,50 @@ body{
      padding:0px;
  }
  .judgement{
-     
+     background-color: yellow;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: auto;
  }
+/* Category Section */
+.choose{
+    background-color: aliceblue;
+    width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 12px;
+}
+.categoryButton{
+    width: 150px;
+    height: 80px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    transition-duration: 0.2s;
+
+}
+.categoryButton:hover{
+    background-color: rgb(10, 207, 10);
+    color: white;
+}
+/* Difficulty Section */
+.diffTitle{
+    background-color: aliceblue;
+    width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 12px;
+}
+.diffButton{
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    transition-duration: 0.2s;
+
+}
+.diffButton:hover{
+    background-color: rgb(10, 207, 10);
+    color: white;
+}

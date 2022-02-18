@@ -6,10 +6,10 @@ function GenKnoDiff() {
 
   return (
     <div>
-      <h1>
+      <h1 className='diffTitle'>
         Difficulty Options for General Knowledge
       </h1>
-      <button onClick={() => {navigate("/Questions")}} >Easy</button>
+      <button className='diffButton' onClick={() => {navigate("/Questions")}} >Easy</button>
     </div>
   )
 }
