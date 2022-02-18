@@ -77,11 +77,13 @@ function EasyQuestions() {
   return (
     <div>
         <h1>Questions are here {quesCount+1}</h1>
-        {question}
+        <h3>{question}</h3>
         <button className={startClass} onClick={handleStart} >START</button>
-        <button onClick={()=>setUserAnswer("True")}>True</button>
-        <button onClick={()=>setUserAnswer("False")}>False</button>
-        {judgment}
+        <div>
+          <button className='options' onClick={()=>setUserAnswer("True")}>True</button>
+          <button className='options' onClick={()=>setUserAnswer("False")}>False</button>
+        </div>
+        <div>{judgment}</div>
         <button onClick={handleNext}>Next</button>
     </div>
   )

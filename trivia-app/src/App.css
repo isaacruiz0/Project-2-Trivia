@@ -1,6 +1,26 @@
-.defaultStart {
-    color:red
+body{
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
 }
+.defaultStart {
+    background-color: #44b0e6;
+    border: none;
+    font-size: 50px;
+    width: 225px;
+    height: 100px;
+    transition-duration: 0.4s;
+    margin: 20px;
+
+}
+.defaultStart:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 .disappear {
     display:none;
+}
+
+.options{
+    
 }
