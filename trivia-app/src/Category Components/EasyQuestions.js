@@ -84,7 +84,9 @@ function EasyQuestions() {
           <button className='options' onClick={()=>setUserAnswer("False")}>False</button>
         </div>
         <div>{judgment}</div>
-        <button onClick={handleNext}>Next</button>
+        <div className='nextDiv'>
+          <button classname='nextButton' onClick={handleNext}>Next</button>
+        </div>
     </div>
   )
 }
