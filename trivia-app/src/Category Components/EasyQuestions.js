@@ -16,6 +16,8 @@ function EasyQuestions() {
   const [quesCount, setQuesCount] = useState(0)
   // this will define the question array that we are working with
   const [currentArray, setCurrentArray] = useState([])
+  // this will make the start button disappear
+  const [startClass, setStartClass] = useState("defaultStart")
   // this will begin the question and answers
   const [start, setStart] = useState(false)
 
@@ -37,6 +39,7 @@ function EasyQuestions() {
   const handleStart = () => {
     setQuestion(currentArray[quesCount].question)
     setAnswer(currentArray[quesCount].correct_answer)
+    setStartClass("disappear")
     console.log(currentArray)
   }
 
@@ -75,7 +78,7 @@ function EasyQuestions() {
     <div>
         <h1>Questions are here {quesCount+1}</h1>
         {question}
-        <button onClick={style.display = 'none'} >START</button>
+        <button className={startClass} onClick={handleStart} >START</button>
         <button onClick={()=>setUserAnswer("True")}>True</button>
         <button onClick={()=>setUserAnswer("False")}>False</button>
         {judgment}
