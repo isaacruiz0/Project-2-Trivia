@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 function EasyQuestions() {
   let url = "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=boolean";
   // this is the api's question
-  const [question, setQuestion] = useState('');
+  const [question, setQuestion] = useState();
   // this is the api's answer
   const [answer, setAnswer] = useState('')
   // this is the user's answer
@@ -76,16 +76,15 @@ function EasyQuestions() {
 
   return (
     <div>
-        <h1>Questions are here {quesCount+1}</h1>
-        <h3>{question}</h3>
+        <h2 className='question'>{question}</h2>
         <button className={startClass} onClick={handleStart} >START</button>
+        <h3 className='judgement'>{judgment}</h3>
         <div>
           <button className='options' onClick={()=>setUserAnswer("True")}>True</button>
           <button className='options' onClick={()=>setUserAnswer("False")}>False</button>
         </div>
-        <div>{judgment}</div>
         <div className='nextDiv'>
-          <button classname='nextButton' onClick={handleNext}>Next</button>
+          <button className='nextButton' onClick={handleNext}>Next</button>
         </div>
     </div>
   )
