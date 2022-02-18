@@ -16,6 +16,8 @@ function EasyQuestions() {
   const [quesCount, setQuesCount] = useState(0)
   // this will define the question array that we are working with
   const [currentArray, setCurrentArray] = useState([])
+  // this will begin the question and answers
+  const [start, setStart] = useState(false)
 
   // This will fetch the question from the api and I will use useStates to make it dyanmic
   useEffect(
@@ -31,9 +33,13 @@ function EasyQuestions() {
       });
     }, [])
 
-  // this will set the question and the answer according the array's data
-console.log(currentArray[0])
-  
+  // this will set the question and the answer according the array's data  
+  const handleStart = () => {
+    setQuestion(currentArray[quesCount].question)
+    setAnswer(currentArray[quesCount].correct_answer)
+    console.log(currentArray)
+  }
+
 
 
 
@@ -57,6 +63,8 @@ console.log(currentArray[0])
   )
   // this will go to the next question and reset the judgement
   const handleNext = () => {
+    setQuestion(currentArray[quesCount].question)
+    setAnswer(currentArray[quesCount].correct_answer)
     setQuesCount(quesCount + 1)
     setJudgement('')
   }
@@ -65,8 +73,9 @@ console.log(currentArray[0])
 
   return (
     <div>
-        <h1>Questions are here baaaby</h1>
+        <h1>Questions are here {quesCount+1}</h1>
         {question}
+        <button onClick={style.display = 'none'} >START</button>
         <button onClick={()=>setUserAnswer("True")}>True</button>
         <button onClick={()=>setUserAnswer("False")}>False</button>
         {judgment}
