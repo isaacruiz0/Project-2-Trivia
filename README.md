@@ -62,9 +62,9 @@ https://opentdb.com/api_config.php
 
 | Component    | Priority | Estimated Time | Actual Time |
 | ------------ | :------: | :------------: | :---------: |
-| Category     | H  	  | 6 hours	   | :---------: |
-| Difficulty   | H	  | 5 hours  	   | :---------: |
-| Questions    | H 	  | 10 hours 	   | :---------: |
+| Category     | H  	| 6 hours	     | 2 hours     |
+| Difficulty   | H	  | 5 hours  	   | 2 hours     |
+| Questions    | H 	  | 10 hours 	   | 8 hours     |
 
 
 ##### PostMVP Time Frame
